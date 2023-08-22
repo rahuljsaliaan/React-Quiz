@@ -11,9 +11,6 @@
 # production
 /build
 
-# practise
-/src/DateCounter.js
-
 # misc
 .DS_Store
 .env.local
