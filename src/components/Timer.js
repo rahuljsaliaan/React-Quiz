@@ -8,7 +8,7 @@ function Timer({ secondsRemaining, dispatch }) {
     function () {
       const id = setInterval(() => {
         dispatch({ type: "tick" });
-      }, 10000);
+      }, 1000);
 
       return () => clearInterval(id);
     },
