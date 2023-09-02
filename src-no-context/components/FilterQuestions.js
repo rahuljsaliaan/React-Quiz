@@ -1,8 +1,4 @@
-import { useQuiz } from "../contexts/QuizContext";
-
-function FilterQuestions() {
-  const { level, dispatch } = useQuiz();
-
+function FilterQuestions({ level, dispatch }) {
   return (
     <div className="filter-questions">
       <h4>Select questions / difficulty</h4>

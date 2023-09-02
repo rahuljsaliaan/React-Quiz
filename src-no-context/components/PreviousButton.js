@@ -1,8 +1,4 @@
-import { useQuiz } from "../contexts/QuizContext";
-
-function PreviousButton() {
-  const { index, dispatch } = useQuiz();
-
+function PreviousButton({ index, dispatch }) {
   if (index === 0) return;
   return (
     <button

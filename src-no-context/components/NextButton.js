@@ -1,10 +1,6 @@
-import { useQuiz } from "../contexts/QuizContext";
-
-function NextButton() {
-  const { index, numQuestions, dispatch, answer } = useQuiz();
-
-  const ansIndex = answer.at(index);
-  if (ansIndex === undefined) return;
+function NextButton({ index, numQuestions, dispatch, answer }) {
+  console.log(answer);
+  if (answer === undefined) return;
 
   if (index < numQuestions - 1)
     return (
