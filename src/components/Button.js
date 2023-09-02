@@ -1,8 +1,13 @@
-import { dispatch } from "../contexts/QuizContext";
+import { useQuiz } from "../contexts/QuizContext";
 
 function Button({ actionType, children }) {
+  const { dispatch } = useQuiz();
+
   return (
-    <button className="btn btn-ui" onClick={dispatch({ type: actionType })}>
+    <button
+      className="btn btn-ui"
+      onClick={() => dispatch({ type: actionType })}
+    >
       {children}
     </button>
   );
