@@ -1,7 +1,8 @@
 {
   "name": "react-quiz",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "description": "Discover React-Quiz App: Educate and entertain with this interactive quiz, enhanced by the React useReducer hook. Choose your quiz level or question count easily. Answer in 30 seconds per question for a high score. Ready to play and learn?",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -20,6 +21,8 @@
     "server": "json-server --watch data/questions.json --port 8000",
     "dbServer": "json-server --watch data/db.json --port 9000"
   },
+  "author" : "Rahul J",
+  "license" : "MIT",
   "eslintConfig": {
     "extends": [
       "react-app",
